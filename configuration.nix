@@ -147,6 +147,7 @@
     btop
     libnotify
     openssl
+    pavucontrol
     
     git
     silver-searcher
