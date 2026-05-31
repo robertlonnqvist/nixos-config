@@ -1,0 +1,24 @@
+font=JetBrainsMono Nerd Font 11
+
+# Positioning and layout
+max-visible=5
+output=eDP-1
+layer=top
+anchor=top-right
+margin=20
+
+# Shape and geometry
+width=300
+height=100
+border-size=2
+border-radius=4
+padding=15
+
+# Tokyo Night Storm Color Palette (Matching your Foot configuration)
+background-color=#1a1b26ef
+text-color=#a9b1d6
+border-color=#7aa2f7
+
+[urgency=high]
+border-color=#f7768e
+default-timeout=0

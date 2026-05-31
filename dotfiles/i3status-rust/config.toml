@@ -1,0 +1,38 @@
+[icons]
+icons = "awesome6"
+
+[theme.overrides]
+idle_bg = "#00000000" # Fully transparent background
+good_bg = "#00000000"
+warning_bg = "#00000000"
+critical_bg = "#00000000"
+info_bg = "#00000000"
+alternating_tint_bg = "#00000000"
+separator_bg = "#00000000"
+
+[[block]]
+block = "net"
+device = "^se-"
+missing_format = ""
+format = " vpn connected "
+
+[[block]]
+block = "battery"
+device = "BAT0"
+full_format = " $icon  fully charged "
+charging_format = " $icon  charging ($percentage) "
+format = " $icon  on battery ($percentage) {$time_remaining.dur(hms:true, min_unit:m) |} "
+
+[[block]]
+block = "sound"
+format = " $icon  {$volume.eng(w:2)|muted} "
+
+[[block]]
+block = "net"
+device = "wlp0s20f3"
+format = " $icon  $ssid {$signal_strength$frequency|Wired connection} "
+
+[[block]]
+block = "time"
+interval = 5
+format = " $icon  $timestamp.datetime(f:'%a %d %b %R') "
