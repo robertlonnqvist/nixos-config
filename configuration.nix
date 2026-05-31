@@ -113,6 +113,10 @@
     settings.PermitRootLogin = "no";
   };
 
+  security.pki.certificateFiles = [
+    ./certs/rootCA.crt
+  ];
+
   # Enable the Flakes toolchain and modern Nix command-line interface
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -142,6 +146,7 @@
     lm_sensors
     btop
     libnotify
+    openssl
     
     git
     silver-searcher
