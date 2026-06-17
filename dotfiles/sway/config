@@ -68,8 +68,8 @@ input type:touchpad {
 }
 
 input type:keyboard {
-  xkb_layout "eu"
-
+  xkb_layout "eu,us"
+  xkb_options "caps:escape,grp:win_space_toggle"
   repeat_delay 300
   repeat_rate 30
 }

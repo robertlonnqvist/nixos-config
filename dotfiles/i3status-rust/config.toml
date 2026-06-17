@@ -29,8 +29,12 @@ format = " $icon  {$volume.eng(w:2)|muted} "
 
 [[block]]
 block = "net"
-device = "wlp0s20f3"
+device = "^wl.*$"
 format = " $icon  $ssid {$signal_strength$frequency|Wired connection} "
+
+[[block]]
+block = "keyboard_layout"
+driver = "sway"
 
 [[block]]
 block = "time"
