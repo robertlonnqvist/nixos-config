@@ -157,6 +157,11 @@ bindsym $mod+Shift+0 move container to workspace number 10
 # Note: workspaces can have any name you want, not just numbers.
 # We just use 1-10 as the default.
 
+# Move focused container to the monitor in that direction
+bindsym $mod+Control+Shift+Left move container to output left
+bindsym $mod+Control+Shift+$left move container to output left
+bindsym $mod+Control+Shift+Right move container to output right
+bindsym $mod+Control+Shift+$right move container to output right
 #
 # Layout stuff:
 #
@@ -278,7 +283,7 @@ bar {
 
 for_window [class=".*"] inhibit_idle fullscreen
 
-bindswitch --reload --locked lid:on output eDP-1 disable
-bindswitch --reload --locked lid:off output eDP-1 enable
+exec_always "pkill solaar; solaar -w hide"
+exec_always "pkill -HUP kanshi || kanshi"
 
 include /etc/sway/config.d/*

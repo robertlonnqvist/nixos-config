@@ -1,5 +1,5 @@
 [icons]
-icons = "awesome6"
+icons = "material-nf"
 
 [theme.overrides]
 idle_bg = "#00000000" # Fully transparent background

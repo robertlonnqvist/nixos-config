@@ -1,0 +1,10 @@
+# Profile 1: Only laptop screen is available (when on the go)
+profile {
+    output eDP-1 enable
+}
+
+# Profile 2: External monitor is connected (disables the internal screen)
+profile {
+    output eDP-1 disable
+    output * enable
+}

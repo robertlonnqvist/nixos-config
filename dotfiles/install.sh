@@ -19,11 +19,12 @@ declare -A LINKS=(
     ["$TARGET_DIR/.config/sway"]="$DOTFILES_DIR/sway"
     ["$TARGET_DIR/.config/gtk-3.0"]="$DOTFILES_DIR/gtk-3.0"
     ["$TARGET_DIR/.local/bin"]="$DOTFILES_DIR/bin"
+    ["$TARGET_DIR/.config/kanshi"]="$DOTFILES_DIR/kanshi"
 )
 
 for TARGET in "${!LINKS[@]}"; do
     SOURCE="${LINKS[$TARGET]}"
-    
+
     if [ ! -e "$SOURCE" ]; then
         echo "⚠️  Warning: Source path missing, skipping: $SOURCE"
         continue
