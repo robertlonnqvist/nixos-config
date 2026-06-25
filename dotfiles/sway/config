@@ -16,7 +16,7 @@ set $right l
 # Your preferred terminal emulator
 set $term foot
 # Your preferred application launcher
-set $menu wofi -G --show drun
+set $menu wofi -G -S drun -i
 
 set $wallpaper ~/.config/sway/wallpaper.png
 set $lock_command swaylock -f -i $wallpaper
